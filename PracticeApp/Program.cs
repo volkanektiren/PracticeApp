@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using PracticeApp.Data;
+
 namespace PracticeApp
 {
     public class Program
@@ -5,6 +8,10 @@ namespace PracticeApp
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            // Add dbcontext to DI container
+            builder.Services.AddDbContext<PracticeContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("PracticeDB")));
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
