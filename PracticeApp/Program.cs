@@ -1,3 +1,5 @@
+using AbstractFactory.Factories.Abstract;
+using AbstractFactory.Factories.Concrete;
 using Microsoft.EntityFrameworkCore;
 using PracticeApp.Data;
 
@@ -15,6 +17,8 @@ namespace PracticeApp
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddScoped<IFactory, Factory1>();
 
             var app = builder.Build();
 
