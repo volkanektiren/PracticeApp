@@ -5,11 +5,7 @@ VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeApp", "PracticeApp\PracticeApp.csproj", "{8CC3ACB3-ED89-45BA-955F-76E5D2849DE2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns", "DesignPatterns", "{B75E5C35-7A21-4AC2-82D3-001728857F7A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{818A3B72-BC1D-4175-B81C-53F23E526E2F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{2EC62DAE-2CA0-48B7-9BF5-9C64BE9C0C60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "AbstractFactory\DesignPatterns.csproj", "{2EC62DAE-2CA0-48B7-9BF5-9C64BE9C0C60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +24,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{818A3B72-BC1D-4175-B81C-53F23E526E2F} = {B75E5C35-7A21-4AC2-82D3-001728857F7A}
-		{2EC62DAE-2CA0-48B7-9BF5-9C64BE9C0C60} = {818A3B72-BC1D-4175-B81C-53F23E526E2F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B60A155B-454C-4CA6-83B3-0794081CF415}

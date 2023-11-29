@@ -1,4 +1,4 @@
-﻿namespace AbstractFactory.Products.Abstract
+﻿namespace DesignPatterns.Creational.AbstractFactory.Products.Abstract
 {
     public interface IProductB
     {

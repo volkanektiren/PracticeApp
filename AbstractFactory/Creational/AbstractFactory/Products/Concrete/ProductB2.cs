@@ -1,6 +1,6 @@
-﻿using AbstractFactory.Products.Abstract;
+﻿using DesignPatterns.Creational.AbstractFactory.Products.Abstract;
 
-namespace AbstractFactory.Products.Concrete
+namespace DesignPatterns.Creational.AbstractFactory.Products.Concrete
 {
     class ProductB2 : IProductB
     {

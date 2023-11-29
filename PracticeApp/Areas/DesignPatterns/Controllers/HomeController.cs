@@ -1,4 +1,4 @@
-using AbstractFactory.Factories.Abstract;
+using DesignPatterns.Creational.AbstractFactory.Factories.Abstract;
 using Microsoft.AspNetCore.Mvc;
 
 namespace PracticeApp.Areas.DesignPatterns.Controllers

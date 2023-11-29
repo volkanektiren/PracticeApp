@@ -1,5 +1,5 @@
-using AbstractFactory.Factories.Abstract;
-using AbstractFactory.Factories.Concrete;
+using DesignPatterns.Creational.AbstractFactory.Factories.Abstract;
+using DesignPatterns.Creational.AbstractFactory.Factories.Concrete;
 using Microsoft.EntityFrameworkCore;
 using PracticeApp.Data;
 
