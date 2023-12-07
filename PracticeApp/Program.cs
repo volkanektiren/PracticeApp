@@ -1,5 +1,7 @@
 using DesignPatterns.Creational.AbstractFactory.Factories.Abstract;
 using DesignPatterns.Creational.AbstractFactory.Factories.Concrete;
+using DesignPatterns.Creational.FactoryMethod.Creators.Abstract;
+using DesignPatterns.Creational.FactoryMethod.Creators.Concrete;
 using Microsoft.EntityFrameworkCore;
 using PracticeApp.Data;
 
@@ -19,6 +21,7 @@ namespace PracticeApp
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddScoped<IFactory, Factory1>();
+            builder.Services.AddScoped<Creator, Creator2>();
 
             var app = builder.Build();
 

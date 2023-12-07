@@ -1,13 +1,15 @@
+﻿using DesignPatterns.Creational.FactoryMethod.Creators.Abstract;
 using Microsoft.AspNetCore.Mvc;
-using System.Text;
 
 namespace PracticeApp.Areas.DesignPatterns.Controllers
 {
     [Area("DesignPatterns")]
-    public class HomeController : Controller
+    public class FactoryMethodController(Creator creator) : Controller
     {
         public IActionResult Index()
         {
+            ViewBag.OperationResult = creator.SomeOperation();
+
             return View();
         }
     }
