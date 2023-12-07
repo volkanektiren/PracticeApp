@@ -1,0 +1,13 @@
+﻿@using DesignPatterns.Creational.Prototype;
+
+@{
+    var title = "Design Patterns - Prototype";
+    ViewData["Title"] = title;
+}
+
+<div>
+    <h1>@title</h1>
+    <p>@(Person.DisplayValues(ViewBag.Person1))</p>
+    <p>@(Person.DisplayValues(ViewBag.Person2))</p>
+    <p>@(Person.DisplayValues(ViewBag.Person3))</p>
+</div>
