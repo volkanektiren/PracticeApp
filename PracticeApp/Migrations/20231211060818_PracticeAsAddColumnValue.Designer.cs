@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PracticeApp.Data;
 
@@ -10,9 +11,11 @@ using PracticeApp.Data;
 namespace PracticeApp.Migrations
 {
     [DbContext(typeof(PracticeContext))]
-    partial class PracticeContextModelSnapshot : ModelSnapshot
+    [Migration("20231211060818_PracticeAsAddColumnValue")]
+    partial class PracticeAsAddColumnValue
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
